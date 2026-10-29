@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Unclaimed</title>
+<style>
+:root { color-scheme: light dark; --paper:#EFE8DA; --stock:#FBF7EE; --ink:#1C1A16; --faded:#7A7366; --red:#C4361E; --edge:#DCD2BF; }
+@media (prefers-color-scheme: dark) { :root { --paper:#15130F; --stock:#221F19; --ink:#EEE6D5; --faded:#9C9384; --red:#EC5A3C; --edge:#3A342A; } }
+* { box-sizing: border-box; }
+body { margin:0; padding:2.5rem 16px 4rem; background:var(--paper); color:var(--ink); font:18px/1.6 "New York", ui-serif, Georgia, serif; -webkit-text-size-adjust:100%; }
+.wrap { max-width:42rem; margin:0 auto; }
+.mast { font:600 13px/1 ui-monospace, "SF Mono", Menlo, monospace; letter-spacing:.18em; text-transform:uppercase; margin-bottom:2rem; display:flex; gap:1.1rem; flex-wrap:wrap; }
+.mast a { color:var(--ink); text-decoration:none; } .mast a.on { color:var(--red); }
+h1 { font-size:2.1rem; line-height:1.15; margin:0 0 .4rem; }
+h2 { font-size:1.25rem; margin:2.2rem 0 .5rem; }
+.label { font:600 12px/1.4 ui-monospace, Menlo, monospace; letter-spacing:.14em; text-transform:uppercase; color:var(--faded); }
+.card { background:var(--stock); border:1px solid var(--edge); border-radius:6px; padding:1rem 1.2rem; margin:1.2rem 0; }
+a { color:var(--red); }
+li { margin:.35rem 0; }
+.stamp { display:inline-block; font:800 14px ui-monospace, Menlo, monospace; letter-spacing:.2em; color:var(--red); border:2.5px solid var(--red); padding:.25rem .6rem; border-radius:4px; transform:rotate(-6deg); margin:.5rem 0 1rem; }
+.foot { margin-top:3rem; padding-top:1.2rem; border-top:1px dashed var(--edge); font-size:.9rem; color:var(--faded); }
+</style>
+</head>
+<body><div class="wrap">
+<nav class="mast"><a href="./">Unclaimed</a><a href="./privacy.html">Privacy</a><a href="./support.html">Support</a></nav>
+<h1>Support</h1>
+<p>Email <a href="mailto:jakedalerourke@gmail.com">jakedalerourke@gmail.com</a> and say what happened. A screenshot helps.</p>
+<h2>Nothing is showing up</h2>
+<ol>
+<li>Open Shortcuts › Automation and check there’s a <strong>Notification</strong> automation for the app, set to <strong>Run Immediately</strong>.</li>
+<li>Check its action is <strong>Unclaimed › File Notification</strong>, with Title, Subtitle and Message set to the parts of the Notification variable.</li>
+<li>In Unclaimed, tap the bell and use <strong>Send a test notification</strong> (add an automation for Unclaimed itself first).</li>
+</ol>
+<h2>Can it recover notifications from before I installed it?</h2>
+<p>No. iOS only passes notifications to the automation as they arrive. Capture starts when you set it up.</p>
+<h2>Does it know if I opened or dismissed something?</h2>
+<p>No. iOS doesn’t share that. Every tag arrives “waiting” and is stamped claimed when you look at it in Unclaimed, or when you swipe to claim it.</p>
+<h2>Some text is missing</h2>
+<p>If an app hides previews, or your Lock Screen previews are off, iOS may pass less text to the automation. Pictures and attachments aren’t passed at all.</p>
+<h2>Restoring the lifetime unlock</h2>
+<p>Settings › Membership › Unlock lifetime › Restore purchase, using the same Apple Account. Family Sharing is supported.</p>
+<p class="foot">Unclaimed is lost property for your iPhone’s notifications. Questions: <a href="mailto:jakedalerourke@gmail.com">jakedalerourke@gmail.com</a></p>
+</div></body></html>
